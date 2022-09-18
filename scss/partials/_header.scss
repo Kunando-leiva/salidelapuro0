@@ -1,0 +1,49 @@
+
+
+
+.menu-header{
+    background-color:$colorazul;
+    color: $colorblanco;
+&__menu-nav{
+        width: 50%;
+    } 
+
+}
+.navbar-brand:hover{
+     font-size: 30px;
+
+    &__navbar-brand {
+        font-family: $fuentestitulos;
+        font-size: 15px;
+
+    }
+}
+
+.menu-ul{
+    list-style-type: none;
+    margin: 0%;
+    display: flex;
+    justify-content: end;
+
+    @media (max-width: 990px) {
+        @include flexbox(center,center); 
+       
+    }
+   
+    li{
+        a{
+        color: $colorblanco;
+        text-decoration: none;
+        font-family: $fuentestitulos;
+        font-size: 17px;
+        } 
+        
+        .nav-link:hover{
+            font-size: 22px;
+        }
+       
+}
+
+ 
+    
+}

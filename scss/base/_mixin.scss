@@ -1,0 +1,16 @@
+@mixin flexbox ($justify-content, $align-items,) {
+    display: flex;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+
+@mixin h1 {
+    width: 100%;
+    height: 85px;
+    background-color: $colornegro;
+    font-family: $fuentestitulos;
+    font-size: 35px;
+    color: $colorblanco;
+    @include flexbox(center, center);
+}
+
