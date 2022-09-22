@@ -1,0 +1,37 @@
+.row{
+    @include flexbox(center,center)
+
+}
+
+
+.blokecomen{
+
+    margin: 5px;
+    text-align: center;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    
+}
+
+.nosotex{
+    @include h1
+}
+
+.comocom{
+    background-color: $colorazul;
+    font-family: $fuentestitulos;
+    font-size: 35px;
+    text-align: center;
+    color: $colorblanco;
+}
+
+.pnos {
+    text-align: center;
+    font-size: 28px;
+    color: map-get($colores, $colornegro);
+    font-family: $fuenteparrafos;
+    margin: 10px;
+  }
+
+

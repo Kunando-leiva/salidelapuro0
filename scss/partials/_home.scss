@@ -1,4 +1,4 @@
-.bodyhome {
+.body {
   background-image: "./assets/img/Caja de regalo personalizada de vino de madera.jpg";
 }
 
@@ -93,9 +93,179 @@ p {
   margin-left: 5%;
 }
 
+@media (min-width:769px) and (max-width: 1024px) {
+  .carousel-inner {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+  
+    .altura {
+      height: 35rem;
+      width: 90%;
+      margin: 3%;
+      margin-left: 5%;
+      border: 2px solid$colornegro;
+    }
+  }
+  
+  .texbox {
+   @include h1;
+  
+  }
+  
+  .texh2inicio {
+    font-family: $fuentestitulos;
+    font-size: 35px;
+    margin-top: 12px;
+    color: $colorblanco;
+  }
+  
+  .texh2inicio:hover {
+    font-size: 40px;
+    color: $colornegro;
+  }
+  p {
+    font-size: 28px;
+    color: map-get($colores, $colornegro);
+    font-family: $fuenteparrafos;
+  }
+  
+  .quienimg {
+    background-color: $colorazul;
+    @include flexbox(center, center);
+    border: 2px solid$colorazul;
+    margin-bottom: 20px;
+    border-bottom: 2px solid$colornegro;
+    border-top: 2px solid$colornegro;
+    border-right: 2px solid$colornegro;
+  
+    .imgn {
+      width: 100%;
+      filter: brightness(70%);
+      margin: 0.5px;
+      border: 2px solid$colornegro;
+    }
+  
+    
+  
+  .imgn:hover {
+      filter: brightness(100%);
+      border: 8px solid$colornegro;
+    }
+  }
+  
+  
+  .quien {
+    background-color: $colorazul;
+    border: 2px solid$colorazul;
+    margin-bottom: 20px;
+    border-bottom: 2px solid$colornegro;
+    border-top: 2px solid$colornegro;
+    border-left: 2px solid$colornegro;
+  }
+  
+  .comoseha {
+    background-color: $colorazul;
+    border: 2px solid$colorazul;
+    margin-bottom: 20px;
+    border-bottom: 2px solid$colornegro;
+    border-top: 2px solid$colornegro;
+    border-left: 2px solid$colornegro;
+  }
+  
+  
+  .video {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    height: 30rem;
+    width: 90%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+  }
+}
 
+@media (min-width:521px) and (max-width: 768px) {
+  .texbox {
+    font-size: 30px;
+  }
 
-@media (max-width: 425px) {
+  .texh2inicio{
+      font-size: 30px;
+  }
+
+  p{
+      font-size: 23px;
+  }
+
+  .ratio{
+    height: 15rem;
+    width: 90%;
+    margin: 3%;
+    margin-left: 5%;
+
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    border: 4px solid$colornegro;
+  }
+
+  .carousel-inner {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+      
+  .altura {
+    height: 25re;
+    width: 90%;
+    margin: 3%;
+    margin-left: 5%;
+    border: 2px solid$colornegro;
+        }
+  }
+}
+
+@media (min-width:426px) and (max-width: 520px) {
+  .texbox {
+    font-size: 30px;
+  }
+
+  .texh2inicio{
+      font-size: 30px;
+  }
+
+  p{
+      font-size: 23px;
+  }
+
+  .ratio{
+    height: 15rem;
+    width: 90%;
+    margin: 3%;
+    margin-left: 5%;
+
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    border: 4px solid$colornegro;
+  }
+
+  .carousel-inner {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+      
+  .altura {
+    height: 19rem;
+    width: 90%;
+    margin: 3%;
+    margin-left: 5%;
+    border: 2px solid$colornegro;
+        }
+  }
+}
+
+@media (min-width:376px) and (max-width: 425px) {
     .texbox {
       font-size: 30px;
     }
@@ -107,9 +277,35 @@ p {
     p{
         font-size: 23px;
     }
+
+    .ratio{
+      height: 15rem;
+      width: 90%;
+      margin: 3%;
+      margin-left: 5%;
+  
+      display: flex;
+      justify-content: flex-start;
+      align-content: center;
+      border: 4px solid$colornegro;
+    }
+  
+    .carousel-inner {
+      display: flex;
+      justify-content: flex-start;
+      align-content: center;
+        
+    .altura {
+      height: 19rem;
+      width: 90%;
+      margin: 3%;
+      margin-left: 5%;
+      border: 2px solid$colornegro;
+          }
+    }
 }
 
-@media (max-width: 375px){
+@media (min-width:321px) and (max-width: 375px){
   .texbox {
     font-size: 25px;
   }
@@ -121,9 +317,35 @@ p {
   p{
     font-size: 18px;
   }
+
+  .ratio{
+    height: 15rem;
+    width: 90%;
+    margin: 3%;
+    margin-left: 5%;
+
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    border: 4px solid$colornegro;
+  }
+
+  .carousel-inner {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+      
+  .altura {
+    height: 19rem;
+    width: 90%;
+    margin: 3%;
+    margin-left: 5%;
+    border: 2px solid$colornegro;
+        }
+  }
 }
 
-@media (max-width: 320px) {
+@media (min-width:240px) and (max-width: 320px) {
   .texbox {
     font-size: 23px;
   }
@@ -154,7 +376,7 @@ p {
     align-content: center;
       
   .altura {
-    height: 25rem;
+    height: 19rem;
     width: 90%;
     margin: 3%;
     margin-left: 5%;

@@ -109,7 +109,7 @@
     margin: 10px;
   }
 }
-.bodyhome {
+.body {
   background-image: "./assets/img/Caja de regalo personalizada de vino de madera.jpg";
 }
 
@@ -206,7 +206,93 @@ p {
   margin-left: 5%;
 }
 
-@media (max-width: 425px) {
+@media (min-width: 769px) and (max-width: 1024px) {
+  .carousel-inner {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+  }
+  .carousel-inner .altura {
+    height: 35rem;
+    width: 90%;
+    margin: 3%;
+    margin-left: 5%;
+    border: 2px solid #000000;
+  }
+  .texbox {
+    width: 100%;
+    height: 85px;
+    background-color: #000000;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 35px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .texh2inicio {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 35px;
+    margin-top: 12px;
+    color: #ffffff;
+  }
+  .texh2inicio:hover {
+    font-size: 40px;
+    color: #000000;
+  }
+  p {
+    font-size: 28px;
+    color: #000000;
+    font-family: Georgia, "Times New Roman", Times, serif;
+  }
+  .quienimg {
+    background-color: #0D6EFD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #0D6EFD;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #000000;
+    border-top: 2px solid #000000;
+    border-right: 2px solid #000000;
+  }
+  .quienimg .imgn {
+    width: 100%;
+    filter: brightness(70%);
+    margin: 0.5px;
+    border: 2px solid #000000;
+  }
+  .quienimg .imgn:hover {
+    filter: brightness(100%);
+    border: 8px solid #000000;
+  }
+  .quien {
+    background-color: #0D6EFD;
+    border: 2px solid #0D6EFD;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #000000;
+    border-top: 2px solid #000000;
+    border-left: 2px solid #000000;
+  }
+  .comoseha {
+    background-color: #0D6EFD;
+    border: 2px solid #0D6EFD;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #000000;
+    border-top: 2px solid #000000;
+    border-left: 2px solid #000000;
+  }
+  .video {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    height: 30rem;
+    width: 90%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+  }
+}
+@media (min-width: 521px) and (max-width: 768px) {
   .texbox {
     font-size: 30px;
   }
@@ -216,8 +302,96 @@ p {
   p {
     font-size: 23px;
   }
+  .ratio {
+    height: 15rem;
+    width: 90%;
+    margin: 3%;
+    margin-left: 5%;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    border: 4px solid #000000;
+  }
+  .carousel-inner {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+  }
+  .carousel-inner .altura {
+    height: 25re;
+    width: 90%;
+    margin: 3%;
+    margin-left: 5%;
+    border: 2px solid #000000;
+  }
 }
-@media (max-width: 375px) {
+@media (min-width: 426px) and (max-width: 520px) {
+  .texbox {
+    font-size: 30px;
+  }
+  .texh2inicio {
+    font-size: 30px;
+  }
+  p {
+    font-size: 23px;
+  }
+  .ratio {
+    height: 15rem;
+    width: 90%;
+    margin: 3%;
+    margin-left: 5%;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    border: 4px solid #000000;
+  }
+  .carousel-inner {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+  }
+  .carousel-inner .altura {
+    height: 19rem;
+    width: 90%;
+    margin: 3%;
+    margin-left: 5%;
+    border: 2px solid #000000;
+  }
+}
+@media (min-width: 376px) and (max-width: 425px) {
+  .texbox {
+    font-size: 30px;
+  }
+  .texh2inicio {
+    font-size: 30px;
+  }
+  p {
+    font-size: 23px;
+  }
+  .ratio {
+    height: 15rem;
+    width: 90%;
+    margin: 3%;
+    margin-left: 5%;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    border: 4px solid #000000;
+  }
+  .carousel-inner {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+  }
+  .carousel-inner .altura {
+    height: 19rem;
+    width: 90%;
+    margin: 3%;
+    margin-left: 5%;
+    border: 2px solid #000000;
+  }
+}
+@media (min-width: 321px) and (max-width: 375px) {
   .texbox {
     font-size: 25px;
   }
@@ -227,8 +401,30 @@ p {
   p {
     font-size: 18px;
   }
+  .ratio {
+    height: 15rem;
+    width: 90%;
+    margin: 3%;
+    margin-left: 5%;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    border: 4px solid #000000;
+  }
+  .carousel-inner {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+  }
+  .carousel-inner .altura {
+    height: 19rem;
+    width: 90%;
+    margin: 3%;
+    margin-left: 5%;
+    border: 2px solid #000000;
+  }
 }
-@media (max-width: 320px) {
+@media (min-width: 240px) and (max-width: 320px) {
   .texbox {
     font-size: 23px;
   }
@@ -254,7 +450,7 @@ p {
     align-content: center;
   }
   .carousel-inner .altura {
-    height: 25rem;
+    height: 19rem;
     width: 90%;
     margin: 3%;
     margin-left: 5%;
@@ -738,6 +934,47 @@ iframe {
   .ubih1 {
     font-size: 24px;
   }
+}
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blokecomen {
+  margin: 5px;
+  text-align: center;
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+}
+
+.nosotex {
+  width: 100%;
+  height: 85px;
+  background-color: #000000;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 35px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.comocom {
+  background-color: #0D6EFD;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 35px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.pnos {
+  text-align: center;
+  font-size: 28px;
+  color: #000000;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
