@@ -109,10 +109,6 @@
     margin: 10px;
   }
 }
-.body {
-  background-image: "./assets/img/Caja de regalo personalizada de vino de madera.jpg";
-}
-
 .carousel-inner {
   display: flex;
   justify-content: flex-start;
@@ -426,10 +422,10 @@ p {
 }
 @media (min-width: 240px) and (max-width: 320px) {
   .texbox {
-    font-size: 23px;
+    font-size: 18px;
   }
   .texh2inicio {
-    font-size: 23px;
+    font-size: 19px;
   }
   p {
     font-size: 17px;
