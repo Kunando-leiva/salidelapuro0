@@ -95,6 +95,21 @@
   align-items: center;
 }
 
+@media (min-width: 240px) and (max-width: 320px) {
+  .cont-foot {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 10px;
+  }
+  .footertex {
+    font-size: 10px;
+  }
+  .tex-footer {
+    border-radius: 10px;
+    padding: 3%;
+    font-size: 25px;
+  }
+}
 @media (max-width: 520px) {
   .cont-foot {
     display: flex;
@@ -115,11 +130,14 @@
   align-content: center;
 }
 .carousel-inner .altura {
-  height: 30rem;
-  width: 90%;
+  width: 80%;
+  height: 500px;
   margin: 3%;
-  margin-left: 5%;
+  margin-left: 10%;
   border: 2px solid #000000;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #000;
 }
 
 .texbox {
@@ -134,62 +152,68 @@
   align-items: center;
 }
 
-.texh2inicio {
+.blokehome {
+  background-color: rgba(15, 15, 20, 0.473);
+  border-radius: 20px;
+}
+.blokehome .texh2inicio {
+  background-color: #0D6EFD;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 35px;
+  margin-top: 12px;
+  border-radius: 20px;
+  color: #ffffff;
+}
+.blokehome .texh2inicio:hover {
+  font-size: 40px;
+  color: #000000;
+}
+.blokehome .phom {
+  font-size: 28px;
+  color: #ffffff;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.blokehome1 {
+  background-color: rgba(15, 15, 20, 0.473);
+  margin-bottom: 3px;
+  border-radius: 20px;
+}
+.blokehome1 .texh2inicio {
+  background-color: #0D6EFD;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 35px;
   margin-top: 12px;
   color: #ffffff;
+  border-radius: 20px;
 }
-
-.texh2inicio:hover {
+.blokehome1 .texh2inicio:hover {
   font-size: 40px;
   color: #000000;
 }
-
-p {
+.blokehome1 .phom {
   font-size: 28px;
-  color: #000000;
+  color: #ffffff;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 .quienimg {
-  background-color: #0D6EFD;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid #0D6EFD;
-  margin-bottom: 20px;
-  border-bottom: 2px solid #000000;
-  border-top: 2px solid #000000;
-  border-right: 2px solid #000000;
+  margin-bottom: 25px;
+  margin-top: 20px;
 }
 .quienimg .imgn {
   width: 100%;
   filter: brightness(70%);
   margin: 0.5px;
   border: 2px solid #000000;
+  border-radius: 20px;
 }
 .quienimg .imgn:hover {
   filter: brightness(100%);
   border: 8px solid #000000;
-}
-
-.quien {
-  background-color: #0D6EFD;
-  border: 2px solid #0D6EFD;
-  margin-bottom: 20px;
-  border-bottom: 2px solid #000000;
-  border-top: 2px solid #000000;
-  border-left: 2px solid #000000;
-}
-
-.comoseha {
-  background-color: #0D6EFD;
-  border: 2px solid #0D6EFD;
-  margin-bottom: 20px;
-  border-bottom: 2px solid #000000;
-  border-top: 2px solid #000000;
-  border-left: 2px solid #000000;
 }
 
 .video {
@@ -202,29 +226,18 @@ p {
   margin-left: 5%;
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 770px) and (max-width: 1023px) {
   .carousel-inner {
     display: flex;
     justify-content: flex-start;
     align-content: center;
   }
   .carousel-inner .altura {
-    height: 35rem;
-    width: 90%;
+    width: 80%;
+    height: 500px;
     margin: 3%;
-    margin-left: 5%;
+    margin-left: 10%;
     border: 2px solid #000000;
-  }
-  .texbox {
-    width: 100%;
-    height: 85px;
-    background-color: #000000;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 35px;
-    color: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
   .texh2inicio {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -238,57 +251,36 @@ p {
   }
   p {
     font-size: 28px;
-    color: #000000;
-    font-family: Georgia, "Times New Roman", Times, serif;
   }
-  .quienimg {
+  .quien .quienimg {
+    margin: 0%;
     background-color: #0D6EFD;
     display: flex;
     justify-content: center;
     align-items: center;
     border: 2px solid #0D6EFD;
-    margin-bottom: 20px;
-    border-bottom: 2px solid #000000;
-    border-top: 2px solid #000000;
-    border-right: 2px solid #000000;
   }
-  .quienimg .imgn {
+  .quien .quienimg .imgn {
     width: 100%;
     filter: brightness(70%);
     margin: 0.5px;
     border: 2px solid #000000;
   }
-  .quienimg .imgn:hover {
+  .quien .quienimg .imgn:hover {
     filter: brightness(100%);
     border: 8px solid #000000;
   }
-  .quien {
-    background-color: #0D6EFD;
-    border: 2px solid #0D6EFD;
-    margin-bottom: 20px;
-    border-bottom: 2px solid #000000;
-    border-top: 2px solid #000000;
-    border-left: 2px solid #000000;
-  }
-  .comoseha {
-    background-color: #0D6EFD;
-    border: 2px solid #0D6EFD;
-    margin-bottom: 20px;
-    border-bottom: 2px solid #000000;
-    border-top: 2px solid #000000;
-    border-left: 2px solid #000000;
-  }
-  .video {
-    display: flex;
-    justify-content: flex-start;
-    align-content: center;
-    height: 30rem;
-    width: 90%;
-    margin-bottom: 5%;
-    margin-left: 5%;
-  }
 }
-@media (min-width: 521px) and (max-width: 768px) {
+.video {
+  display: flex;
+  align-content: center;
+  height: 30rem;
+  width: 90%;
+  margin-bottom: 5%;
+  margin-left: 5%;
+}
+
+@media (min-width: 769px) and (max-width: 906px) {
   .texbox {
     font-size: 30px;
   }
@@ -296,7 +288,30 @@ p {
     font-size: 30px;
   }
   p {
-    font-size: 23px;
+    font-size: 22px;
+  }
+}
+@media (min-width: 521px) and (max-width: 768px) {
+  .texbox {
+    font-size: 28px;
+  }
+  .blokehome .texh2inicio {
+    font-size: 28px;
+    margin: 15px;
+  }
+  .blokehome .phom {
+    font-size: 25px;
+    display: flex;
+    justify-self: center;
+  }
+  .blokehome1 .texh2inicio {
+    font-size: 28px;
+    margin: 15px;
+  }
+  .blokehome1 .phom {
+    font-size: 25px;
+    display: flex;
+    justify-self: center;
   }
   .ratio {
     height: 15rem;
@@ -314,22 +329,33 @@ p {
     align-content: center;
   }
   .carousel-inner .altura {
-    height: 25re;
+    height: 80%;
     width: 90%;
-    margin: 3%;
     margin-left: 5%;
     border: 2px solid #000000;
   }
 }
 @media (min-width: 426px) and (max-width: 520px) {
   .texbox {
-    font-size: 30px;
+    font-size: 25px;
   }
-  .texh2inicio {
-    font-size: 30px;
+  .blokehome .texh2inicio {
+    font-size: 25px;
+    margin: 15px;
   }
-  p {
+  .blokehome .phom {
     font-size: 23px;
+    display: flex;
+    justify-self: center;
+  }
+  .blokehome1 .texh2inicio {
+    font-size: 25px;
+    margin: 15px;
+  }
+  .blokehome1 .phom {
+    font-size: 23px;
+    display: flex;
+    justify-self: center;
   }
   .ratio {
     height: 15rem;
@@ -356,13 +382,25 @@ p {
 }
 @media (min-width: 376px) and (max-width: 425px) {
   .texbox {
-    font-size: 30px;
-  }
-  .texh2inicio {
-    font-size: 30px;
-  }
-  p {
     font-size: 23px;
+  }
+  .blokehome .texh2inicio {
+    font-size: 23px;
+    margin: 15px;
+  }
+  .blokehome .phom {
+    font-size: 20px;
+    display: flex;
+    justify-self: center;
+  }
+  .blokehome1 .texh2inicio {
+    font-size: 23px;
+    margin: 15px;
+  }
+  .blokehome1 .phom {
+    font-size: 20px;
+    display: flex;
+    justify-self: center;
   }
   .ratio {
     height: 15rem;
@@ -389,13 +427,25 @@ p {
 }
 @media (min-width: 321px) and (max-width: 375px) {
   .texbox {
-    font-size: 25px;
+    font-size: 20px;
   }
-  .texh2inicio {
-    font-size: 25px;
+  .blokehome .texh2inicio {
+    font-size: 20px;
+    margin: 15px;
   }
-  p {
+  .blokehome .phom {
     font-size: 18px;
+    display: flex;
+    justify-self: center;
+  }
+  .blokehome1 .texh2inicio {
+    font-size: 18px;
+    margin: 15px;
+  }
+  .blokehome1 .phom {
+    font-size: 17px;
+    display: flex;
+    justify-self: center;
   }
   .ratio {
     height: 15rem;
@@ -424,11 +474,23 @@ p {
   .texbox {
     font-size: 18px;
   }
-  .texh2inicio {
-    font-size: 19px;
+  .blokehome .texh2inicio {
+    font-size: 18px;
+    margin: 15px;
   }
-  p {
+  .blokehome .phom {
     font-size: 17px;
+    display: flex;
+    justify-self: center;
+  }
+  .blokehome1 .texh2inicio {
+    font-size: 18px;
+    margin: 15px;
+  }
+  .blokehome1 .phom {
+    font-size: 17px;
+    display: flex;
+    justify-self: center;
   }
   .ratio {
     height: 15rem;
@@ -806,7 +868,7 @@ p {
 img {
   width: 90%;
   height: 270px;
-  margin-top: 10px;
+  margin: 10px;
 }
 
 img:hover {
@@ -931,18 +993,11 @@ iframe {
     font-size: 24px;
   }
 }
-.row {
+.rownos {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.blokecomen {
-  margin: 5px;
-  text-align: center;
-  display: flex;
-  justify-content: end;
-  flex-direction: column;
+  margin: 0%;
 }
 
 .nosotex {
@@ -957,20 +1012,57 @@ iframe {
   align-items: center;
 }
 
-.comocom {
+.blokecomen {
+  background-color: rgba(15, 15, 20, 0.473);
+  width: 999px;
+  padding: 0%;
+  margin: 8px;
+  text-align: center;
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  border-radius: 20px;
+}
+.blokecomen .comocom {
+  width: 100%;
+  border-radius: 20px;
   background-color: #0D6EFD;
+  color: #ffffff;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 35px;
+  font-size: 35 px;
   text-align: center;
   color: #ffffff;
 }
-
-.pnos {
+.blokecomen .pnos {
   text-align: center;
-  font-size: 28px;
-  color: #000000;
+  font-size: 30px;
+  color: #ffffff;
   font-family: Georgia, "Times New Roman", Times, serif;
-  margin: 10px;
+  margin: 5px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.fondonos {
+  background-color: black;
+  border: solid 1px #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5px;
+  margin: 9px;
+}
+
+@media (max-width: 768px) and (min-width: 521px) {
+  .comocom {
+    font-size: 10px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

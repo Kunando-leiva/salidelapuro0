@@ -1,37 +1,96 @@
-.row{
-    @include flexbox(center,center)
+.rownos{
+    @include flexbox(center,center);
+    margin: 0%;
 
-}
-
-
-.blokecomen{
-
-    margin: 5px;
-    text-align: center;
-    display: flex;
-    justify-content: end;
-    flex-direction: column;
-    
 }
 
 .nosotex{
     @include h1
 }
 
-.comocom{
-    background-color: $colorazul;
-    font-family: $fuentestitulos;
-    font-size: 35px;
+.blokecomen{
+    background-color: rgba(15, 15, 20, 0.473);
+    width: 999px;
+    padding: 0%;
+    margin: 8px;
+  
     text-align: center;
-    color: $colorblanco;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    border-radius: 20px;
+
+    .comocom{
+        width: 100%;
+        border-radius: 20px;
+        background-color: $colorazul;
+        color: $colorblanco;
+        font-family: $fuentestitulos;
+        font-size: 35 px;
+        text-align: center;
+        color: $colorblanco;
+    }
+
+    .pnos {
+        text-align: center;
+        font-size: 30px;
+        color: map-get($colores, $colorblanco);
+        font-family: $fuenteparrafos;
+        margin: 5px;
+      }
+    
 }
 
-.pnos {
-    text-align: center;
-    font-size: 28px;
-    color: map-get($colores, $colornegro);
-    font-family: $fuenteparrafos;
-    margin: 10px;
-  }
+
+.row{
+    @include flexbox(center,center);
+    margin-top: 5px;
+
+}
+
+.fondonos{
+    background-color: black;
+   border: solid 1px $colorblanco;
+   @include flexbox(center,center);
+   flex-direction: column;
+   padding: 5px;
+   margin: 9px;
+}
+
+@media (max-width: 768px) and (min-width:521px) {
+    .comocom{
+        font-size: 10px;
+
+    }
+
+}
+
+
+
+
+
+
+
+@media (min-width:240px) and (max-width: 320px){
+
+}
+
+
+// @media (min-width:769px) and (max-width: 1024px)
+
+// @media (min-width:426px) and (max-width: 520px)
+// @media (min-width:376px) and (max-width: 425px)
+// @media (min-width:321px) and (max-width: 375px)
+
+
+
+
+
+
+
+
+
+
+
 
 
