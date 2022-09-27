@@ -9,7 +9,7 @@
     height: 85px;
     background-color: $colornegro;
     font-family: $fuentestitulos;
-    font-size: 35px;
+    font-size: 2rem;
     color: $colorblanco;
     @include flexbox(center, center);
 }

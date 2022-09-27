@@ -1,21 +1,17 @@
-
-
-
 .menu-header{
     background-color:$colorazul;
     color: $colorblanco;
 &__menu-nav{
         width: 50%;
     } 
-
 }
+
 .navbar-brand:hover{
-     font-size: 30px;
+    font-size: 30px;
 
     &__navbar-brand {
         font-family: $fuentestitulos;
         font-size: 15px;
-
     }
 }
 
@@ -41,9 +37,5 @@
         .nav-link:hover{
             font-size: 22px;
         }
-       
-}
-
- 
-    
+    }
 }

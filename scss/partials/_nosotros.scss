@@ -1,69 +1,412 @@
-.rownos{
-    @include flexbox(center,center);
-    margin: 0%;
 
-}
-
-.nosotex{
-    @include h1
-}
-
-.blokecomen{
-    background-color: rgba(15, 15, 20, 0.473);
-    width: 999px;
-    padding: 0%;
-    margin: 8px;
-  
-    text-align: center;
-    display: flex;
-    justify-content: end;
-    flex-direction: column;
-    border-radius: 20px;
-
-    .comocom{
+@media (min-width:924px) and (max-width: 1440px){
+    .rownos{
+        display: flex;
+        justify-content:center;
         width: 100%;
-        border-radius: 20px;
-        background-color: $colorazul;
-        color: $colorblanco;
-        font-family: $fuentestitulos;
-        font-size: 35px;
-        text-align: center;
-        color: $colorblanco;
-    }
-
-    .pnos {
-        text-align: center;
-        font-size: 30px;
-        color: map-get($colores, $colorblanco);
-        font-family: $fuenteparrafos;
-        margin: 5px;
-      }
     
-}
+    }
+    
+    .nosotex{
+        @include h1;
+    }
+    
+    .blokecomen{
 
-
-.row{
-    @include flexbox(center,center);
-    margin-top: 5px;
-
-}
-
-.fondonos{
-    background-color: black;
-   border: solid 1px $colorblanco;
-   @include flexbox(center,center);
-   flex-direction: column;
-   padding: 5px;
-   margin: 9px;
-}
-
-@media (max-width: 768px) and (min-width:521px) {
-    .comocom{
-        font-size: 10px;
-
+        background-color: rgba(15, 15, 20, 0.582);
+        width: 70rem;
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 20px;
+        
+        .comocom{
+            width: 100%;
+            border-radius: 20px;
+            background-color: $colorazul;
+            color: $colorblanco;
+            font-family: $fuentestitulos;
+            font-size: 30px;
+            text-align: center;
+        }
+    
+        .pnos {
+            text-align: center;
+            font-size: 27px;
+            color: map-get($colores, $colorblanco);
+            font-family: $fuenteparrafos;
+            margin: 5px;
+        }
+        
+    }
+    
+    .galerinos{
+        width: 80rem; 
+        display: flex;
+        justify-content:space-around;
+    
+        .fondonos{
+            color: $colorblanco;
+            background-color: black;
+            border: solid 1px $colorblanco;
+            @include flexbox(center,center);
+            flex-direction: column;
+            font-size: 20;
+            height: 350px;
+            width: 450px;
+          
+            
+            .imgnoso{
+                @include flexbox(center,center);
+                border: solid 1px $colorblanco;
+                margin: 0%;
+                height: 90%;
+                width: 90%;
+            }
+        }
+    
     }
 
 }
+
+@media (min-width:768px) and (max-width: 923px){
+
+    .rownos{
+        @include flexbox(center,center);
+        margin: 0%
+    }
+    
+    .nosotex{
+        @include h1;
+    }
+    
+    .blokecomen{
+        background-color: rgba(15, 15, 20, 0.473);
+        width:700rem ;
+        margin: 8px;
+        display: flex;
+        justify-content: end;
+        flex-direction: column;
+        border-radius: 20px;
+        
+        .comocom{
+            width: 100%;
+            border-radius: 20px;
+            background-color: $colorazul;
+            color: $colorblanco;
+            font-family: $fuentestitulos;
+            font-size: 27px;
+            text-align: center;
+        }
+    
+        .pnos{
+            text-align: center;
+            color: map-get($colores, $colorblanco);
+            font-family: $fuenteparrafos;
+            font-size: 22px;
+            margin: 5px;
+        }
+        
+    }
+    
+    .galerinos{
+
+        display: flex;
+        justify-content: space-around;
+    
+        .fondonos{
+            background-color: black;
+            border: solid 1px $colorblanco;
+            @include flexbox(center,center);
+            height: 250px;
+            width: 350px;
+          
+            
+            .imgnoso{
+                @include flexbox(center,center);
+                border: solid 1px $colorblanco;
+                margin: 0%;
+                height: 210px;
+                width: 300px;
+            }
+        }
+    
+    }
+  
+}    
+
+@media (min-width:600px) and (max-width: 767px){
+
+    .rownos{
+        @include flexbox(center,center);
+        margin: 0%
+    }
+    
+    .nosotex{
+        @include h1;
+    }
+    
+    .blokecomen{
+        background-color: rgba(15, 15, 20, 0.473);
+        width:700rem ;
+        margin: 8px;
+        display: flex;
+        justify-content: end;
+        flex-direction: column;
+        border-radius: 20px;
+        
+        .comocom{
+            width: 100%;
+            border-radius: 20px;
+            background-color: $colorazul;
+            color: $colorblanco;
+            font-family: $fuentestitulos;
+            font-size: 27px;
+            text-align: center;
+        }
+    
+        .pnos{
+            text-align: center;
+            color: map-get($colores, $colorblanco);
+            font-family: $fuenteparrafos;
+            font-size: 22px;
+            margin: 5px;
+        }
+        
+    }
+    
+    .galerinos{
+
+        display: flex;
+        justify-content: space-around;
+    
+        .fondonos{
+            background-color: black;
+            border: solid 1px $colorblanco;
+            @include flexbox(center,center);
+            height: 150px;
+            width: 250px;
+          
+            
+            .imgnoso{
+                @include flexbox(center,center);
+                border: solid 1px $colorblanco;
+                margin: 0%;
+                height: 110px;
+                width: 200px;
+            }
+        }
+    
+    }
+}
+
+@media (min-width:425px) and (max-width: 599px){
+    .rownos{
+        @include flexbox(center,center);
+        margin: 0%
+    }
+    
+    .nosotex{
+        @include h1;
+    }
+    
+    .blokecomen{
+        background-color: rgba(15, 15, 20, 0.473);
+        width:700rem ;
+        margin: 8px;
+        display: flex;
+        justify-content: end;
+        flex-direction: column;
+        border-radius: 20px;
+        
+        .comocom{
+            width: 100%;
+            border-radius: 20px;
+            background-color: $colorazul;
+            color: $colorblanco;
+            font-family: $fuentestitulos;
+            font-size: 27px;
+            text-align: center;
+        }
+    
+        .pnos{
+            text-align: center;
+            color: map-get($colores, $colorblanco);
+            font-family: $fuenteparrafos;
+            font-size: 22px;
+            margin: 5px;
+        }
+        
+    }
+    
+    .galerinos{
+
+        display: flex;
+        justify-content: space-around;
+    
+        .fondonos{
+            background-color: black;
+            border: solid 1px $colorblanco;
+            @include flexbox(center,center);
+            height: 350px;
+            width: 450px;
+            flex-direction: column;
+            margin-bottom: 20px;
+          
+            
+            .imgnoso{
+                @include flexbox(center,center);
+                border: solid 1px $colorblanco;
+                height: 90%;
+                width: 90%;
+            }
+        }
+    
+    }
+}
+
+@media (min-width:300px) and (max-width: 424px){
+    .rownos{
+        @include flexbox(center,center);
+        margin: 0%
+    }
+    
+    .nosotex{
+        @include h1;
+        font-size: 28px;
+    }
+    
+    .blokecomen{
+        background-color: rgba(15, 15, 20, 0.473);
+        width:700rem ;
+        margin: 8px;
+        display: flex;
+        justify-content: end;
+        flex-direction: column;
+        border-radius: 20px;
+        
+        .comocom{
+            width: 100%;
+            border-radius: 20px;
+            background-color: $colorazul;
+            color: $colorblanco;
+            font-family: $fuentestitulos;
+            font-size: 24px;
+            text-align: center;
+        }
+    
+        .pnos{
+            text-align: center;
+            color: map-get($colores, $colorblanco);
+            font-family: $fuenteparrafos;
+            font-size: 20px;
+            margin: 5px;
+        }
+        
+    }
+    
+    .galerinos{
+
+        display: flex;
+        justify-content: space-around;
+    
+        .fondonos{
+            background-color: black;
+            border: solid 1px $colorblanco;
+            @include flexbox(center,center);
+            height: 350px;
+            width: 450px;
+            flex-direction: column;
+            margin-bottom: 20px;
+          
+            
+            .imgnoso{
+                @include flexbox(center,center);
+                border: solid 1px $colorblanco;
+                margin: 0%;
+                height: 90%;
+                width: 99%;
+            }
+        }
+    
+    }
+}
+
+@media (min-width:240px) and (max-width: 299px){
+    .nosotex{
+        @include h1;
+    }
+    
+    .rownos{
+        @include flexbox(center,center);
+        margin: 0%;
+
+        .blokecomen{
+            background-color: rgba(15, 15, 20, 0.473);
+            width:700rem ;
+            margin: 8px;
+            display: flex;
+            justify-content: end;
+            flex-direction: column;
+            border-radius: 20px;
+            
+            .comocom{
+                width: 100%;
+                border-radius: 20px;
+                background-color: $colorazul;
+                color: $colorblanco;
+                font-family: $fuentestitulos;
+                font-size: 22px;
+                text-align: center;
+            }
+        
+            .pnos{
+                text-align: center;
+                color: map-get($colores, $colorblanco);
+                font-family: $fuenteparrafos;
+                font-size: 18px;
+                margin: 5px;
+            }
+            
+        }
+    }
+    
+    
+    
+    
+    
+    .galerinos{
+
+        display: flex;
+        justify-content: space-around;
+    
+        .fondonos{
+            background-color: black;
+            border: solid 1px $colorblanco;
+            @include flexbox(center,center);
+            height: 350px;
+            width: 450px;
+            flex-direction: column;
+            margin-bottom: 20px;
+          
+            
+            .imgnoso{
+                @include flexbox(center,center);
+                border: solid 1px $colorblanco;
+                margin: 0%;
+                height: 90%;
+                width: 90%;
+            }
+        }
+    
+    }
+}
+
+
+
+    
+   
 
 
 

@@ -1,29 +1,171 @@
+.texth1{
+  @include h1
+}
+
 .main-contacto{
   @include flexbox(center,center);
   flex-direction: column;
-
-  .texth1{
-   @include h1
+  
+  .formu{
+    width: 30rem;
+    background-color: rgba(49, 42, 227, 0.356);
+    padding-top: 2%;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    @include flexbox(center,center);
   }
 
+  .formu__titulo{
+    @include flexbox(center,center);
+    color: $colorblanco;
+    background-color: $colorazul;
+    font-family: $fuentestitulos;
+    font-size: 25px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+  }
 
+  label{
+    width: 100%;
+    color: $colorblanco;
+    background-color: $colornegro;
+    font-family: $fuenteparrafos;
+    margin-bottom: 20px;
+    font-size: 25px;
+    border-radius: 10px;
+    padding: 10px;
+    @include flexbox(center,center);
+  }
+
+  input{
+    width: 100%;
+    color: $colornegro;
+    background-color: $colorblanco;
+    font-family: $fuenteparrafos;
+    margin-bottom: 20px;
+    font-size: 25px;
+    border-radius: 10px;
+    @include flexbox(center,center);
+  }
+        
+  textarea {
+    font-size:25px;
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+  }
+
+  #boton{
+    background-color: rgba(28, 27, 27, 0.891);
+    color: white;
+    padding: 20px;
+  }
+      
+  #boton:hover {
+    cursor: pointer;
+  }
+}
+
+@media (min-width:769px) and (max-width: 1023px){
+  .texth1{
+    @include h1
+  }
+
+  .main-contacto{
+    @include flexbox(center,center);
+    flex-direction: column;
+    
     .formu{
-
-      width: 500px;
+      
       background-color: rgba(49, 42, 227, 0.356);
-      padding: 20px;
+      padding-top: 2%;
       border-radius: 10px;
       color: rgb(255, 255, 255);
       font-size: 30px;
       @include flexbox(center,center);
-      }
+    }
+  
+    .formu__titulo{
+      @include flexbox(center,center);
+      color: $colorblanco;
+      background-color: $colorazul;
+      font-family: $fuentestitulos;
+      font-size: 25px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      padding: 10px;
+    }
+  
+    label{
+      width: 100%;
+      color: $colorblanco;
+      background-color: $colornegro;
+      font-family: $fuenteparrafos;
+      margin-bottom: 20px;
+      font-size: 25px;
+      border-radius: 10px;
+      padding: 10px;
+      @include flexbox(center,center);
+    }
+  
+    input{
+      width: 100%;
+      color: $colornegro;
+      background-color: $colorblanco;
+      font-family: $fuenteparrafos;
+      margin-bottom: 20px;
+      font-size: 25px;
+      border-radius: 10px;
+      @include flexbox(center,center);
+    }
+          
+    textarea {
+      font-size:25px;
+      min-height: 100px;
+      max-height: 200px;
+      max-width: 100%;
+    }
+  
+    #boton{
+      background-color: rgba(28, 27, 27, 0.891);
+      color: white;
+      padding: 20px;
+    }
+        
+    #boton:hover {
+      cursor: pointer;
+    }
+  }
+}
 
-      .formu__titulo{
+@media (min-width:521px) and (max-width: 768px){
+
+  .texth1{
+    @include h1
+   }
+
+.main-contacto{
+  @include flexbox(center,center);
+  flex-direction: column;
+  
+  .formu{
+      width: 20rem;
+      background-color: rgba(49, 42, 227, 0.356);
+      padding-top: 2%;
+      border-radius: 10px;
+      color: rgb(255, 255, 255);
+      font-size: 25px;
+      @include flexbox(center,center);
+  }
+
+  .formu__titulo{
         @include flexbox(center,center);
         color: $colorblanco;
         background-color: $colorazul;
         font-family: $fuentestitulos;
-        font-size: 25px;
+        font-size: 20px;
         border-radius: 10px;
         margin-bottom: 20px;
         padding: 10px;
@@ -35,7 +177,7 @@
           background-color: $colornegro;
           font-family: $fuenteparrafos;
           margin-bottom: 20px;
-          font-size: 25px;
+          font-size: 20px;
           border-radius: 10px;
           padding: 10px;
           @include flexbox(center,center);
@@ -48,14 +190,14 @@
           background-color: $colorblanco;
           font-family: $fuenteparrafos;
           margin-bottom: 20px;
-          font-size: 25px;
+          font-size: 20px;
           border-radius: 10px;
           @include flexbox(center,center);
          
         }
         
         textarea {
-        font-size:25px;
+        font-size:20px;
         min-height: 100px;
         max-height: 200px;
         max-width: 100%;
@@ -73,11 +215,13 @@
       }
 
     }
+  }
 
-  
-   
-   
-    @media ( max-width:768px ) {
+@media (min-width:376px) and (max-width: 520px){
+
+  .texth1{
+    @include h1
+   }
       
       .main-contacto{
         display: flex;
@@ -86,10 +230,9 @@
         align-items: center;
       
         .formu{
-
-          width: 500px;
+          width: 20rem;
           background-color: rgba(49, 42, 227, 0.356);
-          padding: 15px;
+          padding: 5%;
           border-radius: 10px;
           color: rgb(255, 255, 255);
           font-size: 30px;
@@ -99,9 +242,9 @@
           .formu__titulo{
             @include flexbox(center,center);
             color: $colorblanco;
-            background-color: $colornegro;
+            background-color: $colorazul;
             font-family: $fuentestitulos;
-            font-size: 25px;
+            font-size: 22px;
             border-radius: 10px;
             margin-bottom: 20px;
             padding: 10px;
@@ -113,7 +256,7 @@
               background-color: $colornegro;
               font-family: $fuenteparrafos;
               margin-bottom: 20px;
-              font-size: 25px;
+              font-size: 20px;
               border-radius: 10px;
               padding: 10px;
               @include flexbox(center,center);
@@ -125,7 +268,7 @@
               background-color: $colorblanco;
               font-family: $fuenteparrafos;
               margin-bottom: 20px;
-              font-size: 25px;
+              font-size: 20px;
               border-radius: 10px;
               @include flexbox(center,center);
              
@@ -134,7 +277,7 @@
           
     
           textarea {
-            font-size:25px;
+            font-size:20px;
             min-height: 100px;
             max-height: 200px;
             max-width: 100%;
@@ -154,9 +297,7 @@
         }
   }
 
-
-
-  @media ( max-width:425px ) {
+@media (min-width:321px) and (max-width: 375px) {
       
     .main-contacto{
       display: flex;
@@ -170,7 +311,7 @@
     
       .formu{
         margin:3%;
-        width: 80%;
+        width: 15rem;
         background-color: rgba(49, 42, 227, 0.356);
         padding: 20px;
         border-radius: 10px;
@@ -182,7 +323,7 @@
         .formu__titulo{
           @include flexbox(center,center);
           color: $colorblanco;
-          background-color: $colornegro;
+          background-color: $colorazul;
           font-family: $fuentestitulos;
           font-size: 20px;
           border-radius: 10px;
@@ -239,17 +380,7 @@
       }
 }
 
-@media (max-width: 375px) {
-  .main-contacto{
-  .texth1{
-    font-size: 25px;
-  }
-}
-
-}
-
-
-@media ( max-width:320px ) {
+@media (min-width:240px) and (max-width: 320px){
       
   .main-contacto{
     display: flex;
@@ -270,7 +401,7 @@
   
     .formu{
       margin:3%;
-      width: 80%;
+      width: 15rem;
       background-color: rgba(49, 42, 227, 0.356);
       padding: 20px;
       border-radius: 10px;
@@ -282,7 +413,7 @@
       .formu__titulo{
         @include flexbox(center,center);
         color: $colorblanco;
-        background-color: $colornegro;
+        background-color: $colorazul;
         font-family: $fuentestitulos;
         font-size: 15px;
         border-radius: 10px;
